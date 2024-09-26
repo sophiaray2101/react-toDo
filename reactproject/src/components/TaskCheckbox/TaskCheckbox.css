@@ -1,0 +1,10 @@
+.checkbox-container{
+   display: flex;
+   justify-content: center;
+   background-color: lightyellow;
+}
+
+.checkbox-row{
+    display: flex;
+    margin: 20px;
+}
