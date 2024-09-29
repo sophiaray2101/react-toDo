@@ -42,8 +42,9 @@ function TaskCheckbox({setFilterTasks}) {
                 type="checkbox" 
                 id="icomplete-box" 
                 onChange={handleIncompleteChange}
-                checked={incompleteChecked}/>
-            <div className="checkbox-text">InComplete Tasks</div>
+                checked={incompleteChecked
+                }/>
+            <div className="checkbox-text">Incomplete Tasks</div>
         </div>
     </div>
   )

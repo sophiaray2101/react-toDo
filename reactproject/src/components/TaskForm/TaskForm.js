@@ -17,9 +17,9 @@ function TaskForm({addItem}) {
 
   return (
     <section className="task-form-container">
-        <h2>Add a new item to the list</h2>
+        <h2 id="task-form-title">Add a new item to the list</h2>
         <form className="task-form" onSubmit={handleSubmit}>
-            <div className="task-form-row">
+            <div className="task-form-row" id="input-form-row">
                 <label>
                     Description:
                     <input 

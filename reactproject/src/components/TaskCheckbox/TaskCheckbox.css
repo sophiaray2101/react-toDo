@@ -1,10 +1,33 @@
 .checkbox-container{
    display: flex;
    justify-content: center;
-   background-color: lightyellow;
+   gap: 30px;
+   margin-top: 20px;
+   padding-top: 10px;
 }
 
 .checkbox-row{
     display: flex;
-    margin: 20px;
+    align-items: center;
+    margin: 0;
+    gap: 10px;
+}
+
+.checkbox-text{
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    font-size: 16px;
+    color: #333;
+}
+
+.checkbox-container input[type="checkbox"]:checked{
+    accent-color: hotpink;
+    cursor: pointer;
+}
+
+.checkbox-container input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    accent-color: #ff6584;
+    cursor: pointer;
 }

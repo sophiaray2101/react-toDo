@@ -7,11 +7,7 @@ import TaskCheckbox from "./components/TaskCheckbox/TaskCheckbox";
 import "./App.css"
 
 function App() {
-  const [items, setItems] = useState([
-    {desc: 'bootcamp project', complete:false},
-    {desc: 'groceries for week', complete:false},
-    {desc: 'bathroom needs deep clean', complete:false},
-  ]);
+  const [items, setItems] = useState([]);
 
   const [filterTasks, setFilterTasks] = useState('all');
 

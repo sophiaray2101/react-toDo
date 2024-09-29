@@ -1,31 +1,83 @@
-.task-form-container{
-    width: 800px;
-    height: 150px;
-    background-color: lightyellow;
-    margin: 25px auto;
+.task-form-container {
+    background-color: #ffffff;
+    padding: 30px;
+    max-width: 450px;
+    margin: 40px auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  #task-form-title {
+    font-size: 26px;
+    color: #333;
     text-align: center;
-    display: flex;
-    flex-direction: column;
+    margin-bottom:30px;
+    font-weight: 600;
+    font-family: 'Poppins',Arial, Helvetica, sans-serif;
+  }
+  
+  .task-form-row {
+    margin-bottom: 20px;
+  }
+  
+  .task-form-row label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #667;
+    font-weight: 500;
+  }
+  
+  .task-form-row input[type="text"] {
+    width: 93%;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .task-form-row input[type="text"]:focus{
+    border-color: #007bff;
+    box-shadow: 0 0 6px rgba(0,123,255,0.2);
+    outline: none;
+  }
 
-}
-
-.task-form-container input{
-    margin-left: 15px;
-    padding: 6px;
-    width: 350px;
-}
-
-.task-form-row button{
-    padding: 6px;
+  .task-form-row button {
+    width: 100%;
+    background-color: #ff6b81;
+    color: white;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: 600;
     border: none;
-    box-shadow: 2px 2px 6px rgba(0, 0,0, 0.5);
+    border-radius: 8px;
     cursor: pointer;
-}
-.task-form-row{
-  margin: 20px;
-}
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .task-form-row button:hover {
+    background-color: #ff4e6a;
+    transform: translateY(-2px);
+  }
 
-.task-form{
-    display: flex;
-    justify-content: center;
-}
+  .task-form-row button:active{
+    transform: translateY(0);
+  }
+
+  @media (max-width: 600px){
+    .task-form-container{
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    #task-form-title{
+        font-size: 20px;
+    }
+
+    .task-form-row input[type="text"], .task-form-row button{
+        padding: 12px;
+        font-size: 14px;
+    }
+  }
+  

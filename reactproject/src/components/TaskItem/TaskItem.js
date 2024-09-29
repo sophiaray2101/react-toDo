@@ -1,4 +1,8 @@
 import React from 'react'
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTrashCan } from '@fortawesome/free-solid-svg-icons';
+
 import './TaskItem.css'
 
 function TaskItem({desc, complete, deleteItem, updateCompleteStatus}) {
@@ -24,7 +28,7 @@ function TaskItem({desc, complete, deleteItem, updateCompleteStatus}) {
 
   return (
     <div className={taskItemClass}>
-      <div className="delete-item" onClick={handleDelete}>X</div>
+      <div className="delete-item" onClick={handleDelete}><FontAwesomeIcon icon={faTrashCan} /></div>
       <p>{desc}</p>
       {buttonContent}
     </div>
