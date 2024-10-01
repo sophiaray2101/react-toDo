@@ -3,6 +3,7 @@ import  React, {useState } from "react";
 import TaskForm from "./components/TaskForm/TaskForm";
 import TaskItemContainer from "./components/TaskItemContainer/TaskItemContainer";
 import TaskCheckbox from "./components/TaskCheckbox/TaskCheckbox";
+import Navbar from "./components/Navbar/Navbar";
 
 import "./App.css"
 
@@ -44,14 +45,7 @@ function App() {
 
   return (
     <div className="App">
-      <header className="page-header">
-        <h3 class="page-title">Task List</h3>
-        <ul class="nav-bar">
-          <li class="nav-bar-item"><a href="#">Home</a></li>
-          <li class="nav-bar-item"><a href="#">Tasks</a></li>
-          <li class="nav-bar-item"><a href="#">Contact</a></li>
-        </ul>
-      </header>
+      <Navbar />
       <TaskForm addItem={addItem}/>
       <TaskCheckbox setFilterTasks={setFilterTasks}/>
       <TaskItemContainer items={getFilterTasks()} deleteItem={deleteItem} updateCompleteStatus={updateCompleteStatus}/>
