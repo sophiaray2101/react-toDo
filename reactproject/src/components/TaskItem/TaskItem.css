@@ -60,3 +60,10 @@
 .delete-item:hover{
     color: red;
 }
+
+@media (max-width: 770px){
+    .task-item{
+        max-width: 500px;
+        width:90%
+    }
+}
