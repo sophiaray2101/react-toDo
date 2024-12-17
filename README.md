@@ -12,6 +12,14 @@ The application is designed with a clean and modern user interface, featuring re
 
 ---
 
+## How to Use
+
+1. Copy repository onto your local machine (`git clone git@github.com:sophiaray2101/healthy-living-app.git`)
+2. Cd into the folder (`cd reactproject`).
+3. Start the application (`npm start`).
+
+---
+
 ## Features
 
 - **Add/Delete New Tasks**: Users can input new tasks through an interactive form, as well as delete tasks through the icon on each task card.
