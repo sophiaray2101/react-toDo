@@ -14,7 +14,7 @@ The application is designed with a clean and modern user interface, featuring re
 
 ## How to Use
 
-1. Copy repository onto your local machine (`git clone git@github.com:sophiaray2101/healthy-living-app.git`)
+1. Copy repository onto your local machine (`git clone git@github.com:sophiaray2101/react-toDo.git`)
 2. Cd into the folder (`cd reactproject`).
 3. Start the application (`npm start`).
 
